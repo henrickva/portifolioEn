@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import { Menu, Minimize2 } from 'lucide-react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 export default function Navbar(){
 
@@ -13,10 +13,6 @@ export default function Navbar(){
                 <span className="text-3xl">
                     <a href="/">henrickva</a>
                 </span>
-
-                <div onClick={()=>setOpen(!open)} className="text-3xl cursor-pointer md:hidden block">
-                    <ion-icon name={open? 'close':'menu'}></ion-icon>
-                </div>
             </div>
             
             <div
@@ -24,9 +20,9 @@ export default function Navbar(){
                   className="cursor-pointer md:hidden block"
                  >
                   {open?
-                    (<Minimize2 className="text-logo-blue" size={30} />)
+                    (<AiOutlineClose  size={30} />)
                     :
-                    (<Menu className="text-logo-blue" size={30}/>)
+                    (<AiOutlineMenu  size={30}/>)
                   }
             </div>
 
