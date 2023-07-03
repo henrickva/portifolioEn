@@ -27,7 +27,7 @@ export default function Projects() {
 
     return(
         <div className='flex items-center justify-center h-screen'>
-            <div className='h-full w-[1120px] flex flex-col justify-center items-center p-10'>
+            <div className='h-full w-full flex flex-col justify-center items-center p-10'>
                 <p className='text-sm italic text-center mb-4 w-full'>
                     Below are some projects for you to choose from. Simply click on the project name, and you will be redirected to the corresponding GitHub page.
                 </p>
