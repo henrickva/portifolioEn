@@ -26,7 +26,7 @@ export default function Navbar(){
                   }
             </div>
 
-            <ul className={`backdrop-blur md:bg-transparent bg-glass text-center md:flex md:item-center  absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto ${open ? 'top-20':'top-[-490px]'}`}>
+            <ul className={`backdrop-blur md:bg-transparent bg-dark-blue text-center md:flex md:item-center  absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto ${open ? 'top-20':'top-[-490px]'}`}>
                 <li className="text-back-blue md:text-dark-blue ease-in duration-200 mx-4 my-6 md:my-0 hover:text-white cursor-pointer">
                     <a href="/projects">Projects</a>
                 </li>
