@@ -3,10 +3,11 @@ import gmail from '@/assets/gmail.png'
 import instagram from '@/assets/instagram.png'
 import linkedin from '@/assets/linkedin.png'
 import github from '@/assets/github.png'
+import { Send } from "@/components/Email";
 
 export default function Contacts(){
     return(
-        <section className="flex justify-center items-center">
+        <section className="flex flex-col justify-center items-center">
             <div className="container">
                 <h1 className="text-2xl font-bold text-dark-blue m-2">Contacts</h1>
                 <p className="m-2 italic"> Feel free to contact me: </p>
@@ -27,8 +28,11 @@ export default function Contacts(){
                     <a target="_blank" href="https://github.com/henrickva">
                         <Image className='hover:opacity-80 px-6 my-5 md:my-0' src={github} height={100}/>
                     </a>
-            </div> 
+                </div>
+                <Send /> 
             </div>
+
+            
         </section>
     )
 }
